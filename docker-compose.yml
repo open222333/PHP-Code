@@ -20,6 +20,15 @@ services:
         #     - mynet
         volumes:
             - ./code:/code
+
+    mongo:
+        container_name: mongo
+        image: mongo
+        expose:
+            - 27017
+        # volumes:
+            # - ./db/mongo:/data/db
+            # - ./config/mongod.conf:/etc/mongod.conf
     
 # networks:
 #     mynet:
