@@ -22,7 +22,7 @@
                     getDirList($file);
                 else if (filename($file) != "." && filename($file) != "..")
                     // echo "$file";
-                    if (! in_array($file, $ignore)) {
+                    if (!in_array($file, $ignore)) {
                         echo '<br>';
                         echo "<a href='http://127.0.0.1/Learning_PHP/$dir/$file'>$file</a>";
                     }
